@@ -369,10 +369,9 @@ function loadMap() {
     });
     zone.setMap(map);
 
-    // Create the DIV to hold the control and call the ParsingPoints() constructor
-    // passing in this DIV.
+    // Create the DIV to hold the control 
     var centerControlDiv = document.createElement('div');
-    var centerControl = new ParsingPoints(centerControlDiv, map);
+
 
     centerControlDiv.index = 1;
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
@@ -542,68 +541,8 @@ function attachSecretMessage(marker, secretMessage) {
 }
 
 
-/////////////////////////////////////
-function ParsingPoints(controlDiv, map) {
-
-    // Set CSS for the control border.
-    /*var controlUI = document.createElement('div');
-
-    controlUI.style.boxShadow = '0px 1px 4px -1px rgba(0, 0, 0, 0.298039)';
-    controlUI.style.cursor = 'pointer';
-    controlUI.style.marginTop = '10px';
-
-    controlUI.style.textAlign = 'center';
-    controlUI.title = 'Click to recenter the map';
-    controlDiv.appendChild(controlUI);
-
-    // Set CSS for the control interior.
-    var controlText = document.createElement('div');
-    controlText.style.color = 'rgba(255,255,255,.75)';
-    controlText.style.fontFamily = 'sans-serif';
-    controlText.style.fontWeight = 'bold';
-    controlText.style.fontSize = '16px';
-    controlText.style.lineHeight = '38px';
-    controlText.style.paddingLeft = '5px';
-    controlText.style.paddingRight = '5px';
-    controlText.innerHTML = 'Un percorso in 7 Tappe';
-    controlUI.appendChild(controlText);
-
-    // Setup the click event listeners: go to points
-    controlUI.addEventListener('click', function() {
-        if (count < 2) {
-            count++;
-            if (current_count > -1) markers_list[current_count].setAnimation(null);
-            current_count = count;
-            markers_list[current_count].setAnimation(google.maps.Animation.BOUNCE);
-            controlText.style.color = 'rgba(255,155,155,.75)';
-        } else {
-            controlText.style.color = 'rgba(255,255,255,.75)';
-            count = -1;
-        }
-        triggerMarker(count);
-    });*/
-}
 
 
-function triggerMarker(i) {
-    /*if (i < 100) {
-        google.maps.event.trigger(markers_list[i], 'click', function() {
-            map.setZoom(18);
-            map.setCenter(marker.getPosition());
-            infoWindow.close();
-
-            infoWindow.setPosition(marker.getPosition());
-            infoWindow.setContent(marker.title);
-            infoWindow.open(map, marker);
-        });
-        $('#myModal').modal('show');
-    } else {
-        infoWindow.close();
-        map.setZoom(16);
-        map.panTo(c);
-    }*/
-
-}
 
 function pinSymbol(color) {
     return {

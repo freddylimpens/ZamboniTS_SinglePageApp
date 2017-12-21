@@ -22,6 +22,7 @@ p {
 /*
  * Backgrounds
  */
+
 .bg-1 {
     background-color: #1abc9c;
     /* Green */
@@ -84,6 +85,13 @@ p {
     font-family: sans-serif;
     text-transform: uppercase;
     color: #474e5d;
+}
+.gm-style .gm-style-iw p{
+   font-size: 11px;
+   /*font-weight: bold;*/
+   font-family: sans-serif;
+   text-transform: uppercase;
+   color: #474e5d;
 }
 
 #concept {
