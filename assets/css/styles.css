@@ -63,6 +63,8 @@ header h1 {
 }
 
 
+
+
 /*ccl :
 button info */
 header button{
@@ -88,14 +90,17 @@ header button:hover{
 	opacity:1;
 }
 
+/*responsive mode*/
 @media (max-width: 500px){
 
 	header {
-		padding: 20px 15px;
+		/*padding: 20px 15px;*/
+		padding: 5px;
+    	margin: Opx;
 	}
 
 	header h1{
-		font-size: 18px;
+		font-size: 13px;
 		margin: 0;
 	}
 

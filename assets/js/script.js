@@ -369,7 +369,7 @@ function loadMap() {
     });
     zone.setMap(map);
 
-    // Create the DIV to hold the control 
+    // Create the DIV to hold the control
     var centerControlDiv = document.createElement('div');
 
 
@@ -631,11 +631,11 @@ $(function () {
 
 	// Single product page buttons
 
-	var singleProductPage = $('.pano');
+	var panoPage = $('.pano');
 
-	singleProductPage.on('click', function (e) {
+	panoPage.on('click', function (e) {
 
-		if (singleProductPage.hasClass('visible')) {
+		if (panoPage.hasClass('visible')) {
 
 			var clicked = $(e.target);
 
